@@ -1,0 +1,108 @@
+% This document is written by Hung and Terrayut. Some part is borrowed from EC template (http://www2.siit.tu.ac.th/somsak/SeniorProjects/2015/2015_SeniorProjectReportTemplate.zip)
+\documentclass[12pt, a4paper]{report}
+\usepackage[top=1in,bottom=1in,left=1.25in,right=1in]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{subcaption,url,hyperref}
+\usepackage{listings}
+\usepackage{amsmath}
+
+% put all figures in foder ./figure
+\graphicspath{{./figure/}}
+
+
+\begin{document}
+
+%%%% BEGIN: TITLE PAGE %%%%
+\begin{center}
+
+\large 
+\vspace*{2cm}
+
+SENIOR PROJECT TH3-2017\\[1cm]
+
+\LARGE
+
+AutoDrone (mission planner for smart farm) \\[1cm]
+
+
+Project Concept\\[2cm]
+\large
+Submitted to \\[1cm]
+School of Information, Computer and Communication Technology \\
+Sirindhorn International Institute of Technology \\
+Thammasat University \\[2cm]
+May 2017 \\[3cm]
+by \\[1cm]
+StudentName1   StuID1 \\
+StudentName2   StuID2\\[2cm]
+Advisor: Dr XX
+\end{center}
+%%%% END: TITLE PAGE %%%%
+
+
+\newpage
+\pagestyle{plain}
+\pagenumbering{roman}
+\onehalfspace
+
+
+\chapter{Project Concept}
+
+In this chapter, you should write a good and concise introduction to your project. 
+
+\section{Summary}
+\label{sec:summary}
+What is  done in the project?  Example:
+
+This project designs and implement a website that allows students to take course evaluations online. The website also provides administrators summary information about courses and lecturers, and allows lecturers to compare their performance with different statistical measures of others (e.g. average across SIIT, upper quartile in school).
+
+\section{Motivation}
+\label{sec:motivation}
+
+What problem does the system solve? Why implement a new system, rather than using/purchasing an existing system? Example:
+
+Current course evaluations at SIIT and many other academic institutions are performed manually: staff prepare forms and take to class, students fill in the forms, staff collect statistics. This is very time consuming, can be disruptive of lectures, and inflexible in the types of questions asked of students. Also, it is difficult to compare historical data, e.g. current evaluations against the past years. An online system can simplify the delivery of the evaluation to students, and provide users with fast access to detailed statistics from the evaluations.
+
+Although many universities use their own online evaluation system, there are software packages available such as ``courseval" (www.course-evaluation.com) and ``EvaluationKIT" (www.evaluationkit.com). These systems are generally quite complex (provide many features not necessary), are hosted (our data will be stored by the company) or costly. Developing a system in-house allows for easy integration with existing systems, tailoring of questions and scoring to internal requirements and ...
+
+\section{Users and Benefits}
+\label{sec:users}
+
+Who will use the system? Who will benefit from the system and how? Example:
+
+This system is intended for higher education institutes, that is, universities and university departments. The users of the system are:
+
+\begin{itemize}
+	\item Students that undertake the evaluation. The benefits to students include: ability to perform evaluation at any time (not necessarily in class); can quickly review course syllabus while evaluating; can see past evaluations.
+	\item Lecturers that view the results for their courses. The benefits to lecturers include: ...
+	\item Administrators (e.g. Head of School, Director) that view the summary information. The benefits ...
+	\item Staff that enter course details. The benefits ...
+
+\end{itemize}
+
+
+\section{Typical Usage}
+\label{sec:usage}
+How will the system be used in a typical scenario? What are some of the key features? Example:
+
+The online course evaluation system will be populated with course information by staff, with most of the information being automatically transferred from Registration. Towards the end of a semester, students will have a fixed period to access the system and evaluate each course. Evaluation will involve filling in an online form. When evaluations are complete the system will collect summary information. Administrators will login and view/download reports on lecturers, courses, schools and other groupings. Reports will include useful statistics such as mean, median, quartiles, both for current semester and compared to past semesters. Lecturers will also be able to login and see a summary for their courses.
+
+
+\section{Main Challenges}
+\label{sec:challenges}
+
+What is  the hardest and/or most time consuming part of the project? Example:
+
+The main challenge of this project is the user interface. In particular, a user interface that allows students to select answers to different types of questions without requiring much effort (e.g. without the need to read instructions), and a user interface to allow administrators/lecturers to extract useful information from the evaluations (e.g. view summary statistics for all courses). A carefully designed user interface for students is important because any survey should be self-explanatory, fast to complete and ask relevant questions. The user interface for administrators will be difficult because they may desire many different views of the information (e.g. graphical vs numerical; per course, school, lecturer, year; correlations with different metrics).
+
+% Use IEEEtranS for bibilography that is sorted alphabetically. 
+\bibliographystyle{IEEEtranS}
+% Uncomment below to use IEEEtran so that the references are sorted by appearance.
+%\bibliographystyle{IEEEtran}
+
+\bibliography{seniorp}		
+
+
+\end{document}
